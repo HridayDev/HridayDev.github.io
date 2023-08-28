@@ -3,38 +3,39 @@
 <body>
 Host:
 <input type="text" value="ftp://ftpupload.net:21/" id="Host">
-<button onclick="Host()">Copy</button>
-  <br>
-  User:
-<input type="text" value="ftp://ftpupload.net:21/" id="User">
-<button onclick="User()">Copy</button>
-  <br>
-  Pass:
-<input type="text" value="ftp://ftpupload.net:21/" id="Pass">
-<button onclick="Pass()">Copy</button>
+<button onclick="copyHost()">Copy</button>
+<br>
+User:
+<input type="text" value="username" id="User">
+<button onclick="copyUser()">Copy</button>
+<br>
+Pass:
+<input type="text" value="password" id="Pass">
+<button onclick="copyPass()">Copy</button>
 <script>
-function Host() {
-  var copyText = document.getElementById("myInput");
+function copyHost() {
+  var copyText = document.getElementById("Host");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
   alert("Copied the text: " + copyText.value);
 }
-  function User() {
-  var copyText = document.getElementById("myInput");
+
+function copyUser() {
+  var copyText = document.getElementById("User");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
   alert("Copied the text: " + copyText.value);
 }
-  function Pass() {
-  var copyText = document.getElementById("myInput");
+
+function copyPass() {
+  var copyText = document.getElementById("Pass");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
   alert("Copied the text: " + copyText.value);
 }
 </script>
-
 </body>
 </html>
