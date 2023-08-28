@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+Host:
+<input type="text" value="ftp://ftpupload.net:21/" id="Host">
+<button onclick="Host()">Copy</button>
+  User:
+<input type="text" value="ftp://ftpupload.net:21/" id="User">
+<button onclick="User()">Copy</button>
+  Pass:
+<input type="text" value="ftp://ftpupload.net:21/" id="Pass">
+<button onclick="Pass()">Copy</button>
+<script>
+function Host() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  alert("Copied the text: " + copyText.value);
+}
+  function User() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  alert("Copied the text: " + copyText.value);
+}
+  function Pass() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+</body>
+</html>
