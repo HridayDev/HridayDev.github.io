@@ -12,6 +12,9 @@ User:
 Pass:
 <input type="text" value="uUz2BPJckd " id="Pass">
 <button onclick="copyPass()">Copy</button>
+IP:
+<input type="text" value="https://6ae2-202-14-121-46.ngrok-free.app " id="IP">
+<button onclick="copyIP()">Copy</button>
 <script>
 function copyHost() {
   var copyText = document.getElementById("Host");
@@ -31,6 +34,14 @@ function copyUser() {
 
 function copyPass() {
   var copyText = document.getElementById("Pass");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  alert("Copied the text: " + copyText.value);
+}
+
+  function copyIP() {
+  var copyText = document.getElementById("IP");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
