@@ -1,1 +1,22 @@
-test
+String Palindrome:
+
+rev = ""
+str1 = "test"
+count1 = len(str1)
+while count1 > 0:
+    rev = "" + rev + str1[count1 - 1]
+    count1 = count1 - 1
+if rev == str1:
+    game.splash("string is palindrome")
+else:
+    game.splash("string is not palindrome")
+
+
+Check amount of "a":
+
+count1 = 0
+str1 = "We are a family"
+for i in str1:
+    if i == "a" or i == "A":
+        count1 = count1 + 1
+game.splash("total number of a is ", count1)
