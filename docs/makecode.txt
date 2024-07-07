@@ -36,3 +36,18 @@ def evennumbers():
             game.splash(i)
 evennumbers()
 
+
+calculate mod:
+
+game.splash("test")
+def mod(num1: number, num2: number):
+    global result
+    result = num1 % num2
+    return result
+result = 0
+num12 = 35
+num22 = 69
+res = mod(num12, num22)
+game.splash("test")
+
+
