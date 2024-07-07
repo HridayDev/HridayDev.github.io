@@ -20,3 +20,8 @@ for i in str1:
     if i == "a" or i == "A":
         count1 = count1 + 1
 game.splash("total number of a is ", count1)
+
+Calculate squares:
+
+for i in range(1,11):
+    game.splash(i*i)
