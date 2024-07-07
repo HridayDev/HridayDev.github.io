@@ -21,7 +21,18 @@ for i in str1:
         count1 = count1 + 1
 game.splash("total number of a is ", count1)
 
+
 Calculate squares:
 
 for i in range(1,11):
     game.splash(i*i)
+
+
+Check even numbers from 1 to 50:
+
+def evennumbers():
+    for i in range(1, 51):
+        if i % 2 == 0:
+            game.splash(i)
+evennumbers()
+
